@@ -4,7 +4,7 @@ const app = express();
 const logger = require("morgan");
 const cors = require("cors");
 
-const shortRoutes = require("./routs/shortMessage");
+const shortRoutes = require("./routs/messagesRoutes");
 
 mongoose.connect('mongodb://127.0.0.1:27017/chat')
     .then(()=> {
